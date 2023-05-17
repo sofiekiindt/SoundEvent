@@ -23,14 +23,16 @@
 
 <body>
   <header>
-    <a href="index.html">
-      <img src="assets/logo.png" class="logo" alt="">
-    </a>
-    <nav>
-      <a href="about.html">OM OS</a>
-      <a href="prices.html">PRISER</a>
-      <a href="contact.html">KONTAKT</a>
-    </nav>
+    <div id="desktop_header">
+      <a href="index.html">
+        <img src="assets/logo.png" class="logo" alt="">
+      </a>
+      <nav>
+        <a href="about.html">OM OS</a>
+        <a href="prices.html">PRISER</a>
+        <a href="contact.html">KONTAKT</a>
+      </nav>
+    </div>
   </header>
   <main>
     <!--  Background Video -->
@@ -39,8 +41,17 @@
     </video>
 
     <img id="logo_main" src="assets/logo.png" alt="">
+
+    <nav id="mobile_nav_frontpage" aria-label="Mobile navigation">
+      <a href="about.html">OM OS</a>
+      <a href="prices.html">PRISER</a>
+      <a href="contact.html">KONTAKT</a>
+    </nav>
+
   </main>
   <footer>
+    <img id="logo_footer" src="assets/logo.png" alt="">
+
     <div id="SoMe">
       <a href="https://www.instagram.com/soundeventdk/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://www.facebook.com/SoundEventDK " target="_blank"><i class="fa-brands fa-square-facebook"></i></a>

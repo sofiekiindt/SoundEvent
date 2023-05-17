@@ -9,36 +9,39 @@
 /* ----------------------- Header ----------------------- */
 header {
   display: flex;
+}
+
+#desktop_header {
+  width: 100vw;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px 0 0;
+  padding: 0 60px 0 26px;
   height: 97px;
 }
 
-nav {
+#desktop_header nav {
   display: flex;
   gap: 30px;
+  margin-top: 10px;
 }
 
-nav a {
+#desktop_header nav a {
   font-size: 20px;
   text-decoration: none;
 }
 
-.logo {
+#desktop_header .logo {
   width: 237px;
 }
 
 /* ----------------------- Main ----------------------- */
+/* ------------ General ------------ */
 main {
   min-height: calc(100vh - 97px);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#logo_main {
-  margin-top: 105px;
 }
 
 #bg_video {
@@ -53,10 +56,72 @@ main {
   z-index: -1;
 }
 
-/* ----------------------- Footer ----------------------- */
+/* ------------ Frontpage ------------ */
+#logo_main {
+  margin-top: 276px;
+  max-width: 421px;
+  width: 90vw;
+  height: auto;
+}
 
+#mobile_nav_frontpage {
+  display: none;
+}
+
+/* ----------------------- Footer ----------------------- */
+footer {
+  display: flex;
+}
+
+#logo_footer {
+  display: none;
+}
 
 /* --------- SoMe --------- */
 #SoMe a {
   font-size: xx-large;
+}
+
+/* ----------------------- Media queries ----------------------- */
+@media screen and (max-width: 768px) {
+
+  /* ----------------------- Header ----------------------- */
+  #desktop_header {
+    display: none;
+  }
+
+  /* ----------------------- Main ----------------------- */
+  /* ------------ Frontpage ------------ */
+  #logo_main {
+    margin: 154px 0 96px 0;
+  }
+
+  #mobile_nav_frontpage {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  #mobile_nav_frontpage a {
+    text-decoration: none;
+    background-color: rgba(106, 106, 106, 31%);
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 313px;
+    width: 90vw;
+    padding: 10.5px 0;
+    text-align: center;
+  }
+
+  /* ----------------------- Footer ----------------------- */
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo_footer {
+    display: block;
+    height: 36px;
+    width: max-content;
+  }
 }
