@@ -35,6 +35,14 @@ header {
   width: 237px;
 }
 
+.active {
+  font-weight: bolder;
+}
+
+#mobile_header {
+  display: none;
+}
+
 /* ----------------------- Main ----------------------- */
 /* ------------ General ------------ */
 main {
@@ -68,6 +76,67 @@ main {
   display: none;
 }
 
+article {
+  max-width: 70vw;
+  display: flex;
+}
+
+/* ------------ Om os ------------ */
+#about_us {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ------------ Priser ------------ */
+#prices {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: 30px;
+}
+
+#prices section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 304px;
+  height: 392px;
+  background-color: rgba(0, 0, 0, 60%);
+  padding: 0 5px;
+}
+
+#prices section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#prices section p {
+  font-size: 18px;
+  text-align: center;
+}
+
+#prices section span {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 900;
+  color: #0094FF;
+}
+
+#prices section .moms {
+  font-size: 10px;
+}
+
+#prices section a {
+  width: 178px;
+  text-align: center;
+  background-color: rgba(100, 100, 100, 22%);
+  padding: 12.8px 0;
+  text-decoration: none;
+}
+
 /* ----------------------- Footer ----------------------- */
 footer {
   display: flex;
@@ -86,8 +155,21 @@ footer {
 @media screen and (max-width: 768px) {
 
   /* ----------------------- Header ----------------------- */
+  header {
+    flex-direction: row-reverse;
+  }
+
   #desktop_header {
     display: none;
+  }
+
+  #mobile_header {
+    display: block;
+  }
+
+  #mobile_header i {
+    font-size: 52px;
+    margin: 26px 26px 0 0;
   }
 
   /* ----------------------- Main ----------------------- */
@@ -113,6 +195,13 @@ footer {
     text-align: center;
   }
 
+  /* ------------ Priser ------------ */
+  #prices {
+    flex-direction: column;
+    gap: 29px;
+    margin-bottom: 30px;
+  }
+
   /* ----------------------- Footer ----------------------- */
   footer {
     flex-direction: column;
@@ -122,6 +211,6 @@ footer {
   #logo_footer {
     display: block;
     height: 36px;
-    width: max-content;
+    width: auto;
   }
 }

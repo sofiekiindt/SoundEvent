@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoundEvent</title>
+  <title>Om os - SoundEvent</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -28,26 +28,42 @@
         <img src="assets/logo.png" class="logo" alt="">
       </a>
       <nav>
-        <a href="om-os.html">OM OS</a>
+        <a href="index.html">FORSIDE</a>
+        <a href="om-os.html" class="active">OM OS</a>
         <a href="priser.html">PRISER</a>
         <a href="kontakt.html">KONTAKT</a>
       </nav>
     </div>
+    <div id="mobile_header">
+      <i class="fa-solid fa-bars"></i>
+    </div>
   </header>
+
   <main>
     <!--  Background Video -->
     <video id="bg_video" autoplay muted loop>
       <source src="assets/bg2.mp4" type="video/mp4">
     </video>
 
-    <img id="logo_main" src="assets/logo.png" alt="">
+    <article id="about_us">
+      <h1>HVEM ER VI?</h1>
+      <p>
+        For SoundEvent er det vigtigt, altid at være jordnær og møde folk med et smil. Vi tror på, at man når længst
+        ved at bygge mange broer. Ikke kun ud fra et erhvervsmæssigt synspunkt - men til livet generelt.
+      </p>
 
-    <nav id="mobile_nav_frontpage" aria-label="Mobile navigation">
-      <a href="om-os.html">OM OS</a>
-      <a href="priser.html">PRISER</a>
-      <a href="kontakt.html">KONTAKT</a>
-    </nav>
-
+      <p>
+        Hos SoundEvent forsøger vi altid at tilpasse og opfylde den enkelte kundes ønsker, uanset hvor krævende de end
+        måtte være, men samtidigt er vi meget åbne og ærlige omkring, hvis vi møder opgaver, vi ikke mener at kunne
+        løse tilfredsstillende.
+      </p>
+      <p>
+        Det lyder måske ret banalt, men det er de grundsten som vi bygger vores virksomhed, SoundEvent, op omkring.
+      </p>
+      <p>
+        / Teamet bag SoundEvent
+      </p>
+    </article>
   </main>
   <footer>
     <img id="logo_footer" src="assets/logo.png" alt="">
@@ -58,7 +74,8 @@
     </div>
   </footer>
 
-  <!--js link til burgermenu-->
+  <!--js link--->
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

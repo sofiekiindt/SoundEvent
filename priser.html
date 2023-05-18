@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoundEvent</title>
+  <title>Priser - SoundEvent</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -28,26 +28,52 @@
         <img src="assets/logo.png" class="logo" alt="">
       </a>
       <nav>
+        <a href="index.html">FORSIDE</a>
         <a href="om-os.html">OM OS</a>
-        <a href="priser.html">PRISER</a>
+        <a href="priser.html" class="active">PRISER</a>
         <a href="kontakt.html">KONTAKT</a>
       </nav>
     </div>
+    <div id="mobile_header">
+      <i class="fa-solid fa-bars"></i>
+    </div>
   </header>
+
   <main>
     <!--  Background Video -->
     <video id="bg_video" autoplay muted loop>
       <source src="assets/bg2.mp4" type="video/mp4">
     </video>
 
-    <img id="logo_main" src="assets/logo.png" alt="">
-
-    <nav id="mobile_nav_frontpage" aria-label="Mobile navigation">
-      <a href="om-os.html">OM OS</a>
-      <a href="priser.html">PRISER</a>
-      <a href="kontakt.html">KONTAKT</a>
-    </nav>
-
+    <article id="prices">
+      <section>
+        <h2>3 TIMER</h2>
+        <p>
+          Pakken inkluderer opsøtning og nedtagning af udstyr samt lys, lyd og DJ i 3 timer.
+        </p>
+        <span>3.000 DKK</span>
+        <p class="moms"> EKSKL. MOMS</p>
+        <a href="mailto:email@example.com">KONTAKT OS</a>
+      </section>
+      <section>
+        <h2>5 TIMER</h2>
+        <p>
+          Pakken inkluderer opsøtning og nedtagning af udstyr samt lys, lyd og DJ i 5 timer.
+        </p>
+        <span>5.000 DKK</span>
+        <p class="moms"> EKSKL. MOMS</p>
+        <a href="mailto:email@example.com">KONTAKT OS</a>
+      </section>
+      <section>
+        <h2>7 TIMER</h2>
+        <p>
+          Pakken inkluderer opsøtning og nedtagning af udstyr samt lys, lyd og DJ i 7 timer.
+        </p>
+        <span>7.000 DKK</span>
+        <p class="moms"> EKSKL. MOMS</p>
+        <a href="mailto:email@example.com">KONTAKT OS</a>
+      </section>
+    </article>
   </main>
   <footer>
     <img id="logo_footer" src="assets/logo.png" alt="">
@@ -57,8 +83,8 @@
       <a href="https://www.facebook.com/SoundEventDK " target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
     </div>
   </footer>
-
-  <!--js link til burgermenu-->
+  <!--js link--->
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
