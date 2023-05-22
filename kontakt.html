@@ -35,7 +35,24 @@
       </nav>
     </div>
     <div id="mobile_header">
-      <i class="fa-solid fa-bars"></i>
+      <i id="open_button" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
+    </div>
+    <div id="mobile_overlay">
+      <i id="close_button" class="fa-solid fa-xmark" onclick="mobileMenu()"></i>
+      <ul>
+        <li>
+          <a href="index.html">FORSIDE</a>
+        </li>
+        <li>
+          <a href="om-os.html">OM OS</a>
+        </li>
+        <li>
+          <a href="priser.html">PRISER</a>
+        </li>
+        <li>
+          <a href="kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
     </div>
   </header>
   <main>
@@ -44,18 +61,29 @@
       <source src="assets/bg2.mp4" type="video/mp4">
     </video>
 
-    <div class="section_kontakt">
-      <div class="text_kontakt">
-        <h2 class="kontakt_overskrift">KONTAKT OS</h2>
-        <p>
-          <i class="ri-mail-line"></i> soundeventx@gmail.com <br>
-          <i class="ri-smartphone-line"></i> + 45 31 12 75 48 <br>
-          <i class="ri-instagram-line"></i> @soundevent
-      </div>
-      </p>
-    </div>
-  </main>
+    <article id="contact">
+      <section>
+        <h1>KONTAKT OS</h1>
+        <div>
+          <p>
+            <i class="fa-solid fa-phone"></i> + 45 31 12 75 48
+          </p>
+          <p>
+            <i class="fa-regular fa-envelope"></i> soundeventx@gmail.com
+          </p>
+        </div>
+      </section>
 
+    </article>
+  </main>
+  <footer>
+    <img id="logo_footer" src="assets/logo.png" alt="">
+
+    <div id="SoMe">
+      <a href="https://www.instagram.com/soundeventdk/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/SoundEventDK " target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+    </div>
+  </footer>
   <script type="text/javascript" src="script.js"></script>
 </body>
 

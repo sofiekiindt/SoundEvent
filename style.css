@@ -7,10 +7,12 @@
 }
 
 /* ----------------------- Header ----------------------- */
+/* ------------ General ------------ */
 header {
   display: flex;
 }
 
+/* ------------ Desktop ------------ */
 #desktop_header {
   width: 100vw;
   display: flex;
@@ -39,8 +41,51 @@ header {
   font-weight: bolder;
 }
 
+/* ------------ Mobile ------------ */
 #mobile_header {
   display: none;
+}
+
+#open_button {
+  font-size: 42px;
+  color: whitesmoke;
+}
+
+#close_button {
+  position: absolute;
+  color: whitesmoke;
+  top: 20px;
+  right: 25px;
+  font-size: 63px;
+}
+
+#mobile_overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(44, 3, 74, 1) 70%, rgba(0, 0, 0, 1) 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#mobile_overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: whitesmoke;
+  display: block;
+}
+
+#mobile_overlay ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 20%;
+  gap: 30px;
 }
 
 /* ----------------------- Main ----------------------- */
@@ -62,6 +107,11 @@ main {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 /* ------------ Frontpage ------------ */
@@ -86,50 +136,62 @@ article {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-top: 101px;
+}
+
+#about_us p {
+  font-size: 24px;
+  font-weight: normal;
 }
 
 /* ------------ Priser ------------ */
-#prices {
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
+#prices h1 {
   margin-top: 80px;
-  gap: 30px;
+  margin-bottom: 35px;
 }
 
-#prices section {
+#prices article {
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-bottom: 24px;
+}
+
+#prices article section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   max-width: 304px;
+  min-width: 200px;
   height: 392px;
   background-color: rgba(0, 0, 0, 60%);
   padding: 0 5px;
 }
 
-#prices section h2 {
+#prices article section h2 {
   font-size: 32px;
   margin-bottom: 10px;
 }
 
-#prices section p {
+#prices article section p {
   font-size: 18px;
   text-align: center;
 }
 
-#prices section span {
+#prices article section span {
   margin-top: 10px;
   font-size: 24px;
   font-weight: 900;
   color: #0094FF;
 }
 
-#prices section .moms {
+#prices article section .moms {
   font-size: 10px;
 }
 
-#prices section a {
+#prices article section a {
   width: 178px;
   text-align: center;
   background-color: rgba(100, 100, 100, 22%);
@@ -137,9 +199,34 @@ article {
   text-decoration: none;
 }
 
+#prices p:last-of-type {
+  font-size: 20px;
+  font-weight: normal;
+  max-width: 80vw;
+  text-align: center;
+}
+
+/* ------------ Kontakt ------------ */
+#contact {
+  margin-top: 100px;
+}
+
+#contact section {
+  text-align: center;
+}
+
+#contact section div {
+  margin-top: 123px;
+}
+
+#contact p {
+  font-size: 24px;
+}
+
 /* ----------------------- Footer ----------------------- */
 footer {
   display: flex;
+  margin-top: 30px;
 }
 
 #logo_footer {
@@ -152,6 +239,12 @@ footer {
 }
 
 /* ----------------------- Media queries ----------------------- */
+/* @media screen and (max-width: 1024px) {
+  #prices article {
+    max-width: 80vw;
+  }
+} */
+
 @media screen and (max-width: 768px) {
 
   /* ----------------------- Header ----------------------- */
@@ -164,7 +257,7 @@ footer {
   }
 
   #mobile_header {
-    display: block;
+    display: flex;
   }
 
   #mobile_header i {
@@ -173,6 +266,10 @@ footer {
   }
 
   /* ----------------------- Main ----------------------- */
+  h1 {
+    font-size: clamp(22px, 5.5vw, 40px);
+  }
+
   /* ------------ Frontpage ------------ */
   #logo_main {
     margin: 154px 0 96px 0;
@@ -195,11 +292,30 @@ footer {
     text-align: center;
   }
 
+
   /* ------------ Priser ------------ */
-  #prices {
+  /* #prices h1 {
+    font-size: 35px;
+    text-align: center;
+    padding: 0 5px;
+  } */
+
+  #prices article {
     flex-direction: column;
     gap: 29px;
-    margin-bottom: 30px;
+  }
+
+  #prices article section {
+    min-width: 269px;
+  }
+
+  /* ------------ Kontakt ------------ */
+  /* #contact h1 {
+    font-size: clamp(35px, 5.5vw, 40px);
+  } */
+
+  #contact p {
+    font-size: clamp(15px, 3.5vw, 24px);
   }
 
   /* ----------------------- Footer ----------------------- */

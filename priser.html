@@ -35,17 +35,35 @@
       </nav>
     </div>
     <div id="mobile_header">
-      <i class="fa-solid fa-bars"></i>
+      <i id="open_button" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
+    </div>
+    <div id="mobile_overlay">
+      <i id="close_button" class="fa-solid fa-xmark" onclick="mobileMenu()"></i>
+      <ul>
+        <li>
+          <a href="index.html">FORSIDE</a>
+        </li>
+        <li>
+          <a href="om-os.html">OM OS</a>
+        </li>
+        <li>
+          <a href="priser.html">PRISER</a>
+        </li>
+        <li>
+          <a href="kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
     </div>
   </header>
 
-  <main>
+  <main id="prices">
     <!--  Background Video -->
     <video id="bg_video" autoplay muted loop>
       <source src="assets/bg2.mp4" type="video/mp4">
     </video>
 
-    <article id="prices">
+    <h1>KUNDERNES FAVORITTER</h1>
+    <article>
       <section>
         <h2>3 TIMER</h2>
         <p>
@@ -74,6 +92,7 @@
         <a href="mailto:email@example.com">KONTAKT OS</a>
       </section>
     </article>
+    <p>Ønsker du andet end ovenstående? Så tøv ikke med at kontakte os!</p>
   </main>
   <footer>
     <img id="logo_footer" src="assets/logo.png" alt="">
