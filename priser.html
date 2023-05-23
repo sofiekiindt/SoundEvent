@@ -22,7 +22,11 @@
 </head>
 
 <body>
+
+  <!-- Header - Indhold i toppen af hjemmesiden -->
   <header>
+
+    <!-- Header i desktop udgaven af hjemmesiden -->
     <div id="desktop_header">
       <a href="index.html">
         <img src="assets/logo.png" class="logo" alt="">
@@ -34,9 +38,13 @@
         <a href="kontakt.html">KONTAKT</a>
       </nav>
     </div>
+
+    <!-- Header i mobil udgaven af hjemmesiden. Indeholder en "åben knap" til mobil overlay -->
     <div id="mobile_header">
       <i id="open_button" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
     </div>
+
+    <!-- Mobil overlay, som vises når man tykker på "åben knappen" -->
     <div id="mobile_overlay">
       <i id="close_button" class="fa-solid fa-xmark" onclick="mobileMenu()"></i>
       <ul>
@@ -57,13 +65,19 @@
   </header>
 
   <main id="prices">
-    <!--  Background Video -->
+    <!--  Baggrund Video -->
     <video id="bg_video" autoplay muted loop>
       <source src="assets/bg2 v2.mp4" type="video/mp4">
     </video>
 
+    <!-- Indhold på priser siden -->
+
+    <!-- Titel over "x timer" boksene -->
     <h1>KUNDERNES FAVORITTER</h1>
+
     <article>
+
+      <!-- 3 timer boksen -->
       <section>
         <h2>3 TIMER</h2>
         <p>
@@ -73,6 +87,8 @@
         <p class="moms"> EKSKL. MOMS</p>
         <a href="mailto:email@example.com">KONTAKT OS</a>
       </section>
+
+      <!-- 5 timer boksen -->
       <section>
         <h2>5 TIMER</h2>
         <p>
@@ -82,6 +98,8 @@
         <p class="moms"> EKSKL. MOMS</p>
         <a href="mailto:email@example.com">KONTAKT OS</a>
       </section>
+
+      <!-- 7 timer boksen -->
       <section>
         <h2>7 TIMER</h2>
         <p>
@@ -94,8 +112,14 @@
     </article>
     <p>Ønsker du andet end ovenstående? Så tøv ikke med at kontakte os!</p>
   </main>
+
+  <!-- Footer - Indhold i bunden af hjemmesiden  -->
   <footer>
+
+    <!-- Logo, som kun vises på mobil versionen af hjemmesiden -->
     <img id="logo_footer" src="assets/logo.png" alt="">
+
+    <!-- Indholdet i #footer_container er det generelle tekst i footer'en -->
     <div id="footer_container">
       <div>
         <h3>Kontakt os</h3>

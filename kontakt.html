@@ -22,7 +22,11 @@
 </head>
 
 <body>
+
+  <!-- Header - Indhold i toppen af hjemmesiden -->
   <header>
+
+    <!-- Header i desktop udgaven af hjemmesiden -->
     <div id="desktop_header">
       <a href="index.html">
         <img src="assets/logo.png" class="logo" alt="">
@@ -34,9 +38,13 @@
         <a href="kontakt.html" class="active">KONTAKT</a>
       </nav>
     </div>
+
+    <!-- Header i mobil udgaven af hjemmesiden. Indeholder en "åben knap" til mobil overlay -->
     <div id="mobile_header">
       <i id="open_button" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
     </div>
+
+    <!-- Mobil overlay, som vises når man tykker på "åben knappen" -->
     <div id="mobile_overlay">
       <i id="close_button" class="fa-solid fa-xmark" onclick="mobileMenu()"></i>
       <ul>
@@ -56,11 +64,13 @@
     </div>
   </header>
   <main>
-    <!--  Background Video -->
+
+    <!--  Baggrund Video -->
     <video id="bg_video" autoplay muted loop>
       <source src="assets/bg2 v2.mp4" type="video/mp4">
     </video>
 
+    <!-- Indhold på kontakt siden -->
     <article id="contact">
       <section>
         <h1>KONTAKT OS</h1>
@@ -73,11 +83,16 @@
           </p>
         </div>
       </section>
-
     </article>
   </main>
+
+  <!-- Footer - Indhold i bunden af hjemmesiden  -->
   <footer>
+
+    <!-- Logo, som kun vises på mobil versionen af hjemmesiden -->
     <img id="logo_footer" src="assets/logo.png" alt="">
+
+    <!-- Indholdet i #footer_container er det generelle tekst i footer'en -->
     <div id="footer_container">
       <div>
         <h3>Kontakt os</h3>
