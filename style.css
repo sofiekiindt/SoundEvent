@@ -1,3 +1,4 @@
+/* ----------------------- Wildcard ----------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -48,12 +49,10 @@ header {
 
 #open_button {
   font-size: 42px;
-  color: whitesmoke;
 }
 
 #close_button {
   position: absolute;
-  color: whitesmoke;
   top: 20px;
   right: 25px;
   font-size: 63px;
@@ -75,7 +74,6 @@ header {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: whitesmoke;
   display: block;
 }
 
@@ -261,13 +259,13 @@ footer {
 
 
 /* ----------------------- Media queries ----------------------- */
-
-
 @media screen and (max-width: 768px) {
 
   /* ----------------------- Header ----------------------- */
   header {
     flex-direction: row-reverse;
+    position: fixed;
+    right: 0px;
   }
 
   #desktop_header {
@@ -332,7 +330,7 @@ footer {
   /* ----------------------- Footer ----------------------- */
   footer {
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 
   #logo_footer {
@@ -340,17 +338,20 @@ footer {
     height: 36px;
     width: auto;
     margin-bottom: 20px;
+    align-self: center;
   }
 }
 
 @media screen and (max-width: 600px) {
   #footer_container {
+    width: auto;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
+    padding-left: 15px;
   }
 
-  #footer_container div {
+  /* #footer_container div {
     text-align: center;
-  }
+  } */
 }
