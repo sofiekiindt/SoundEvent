@@ -231,26 +231,42 @@ footer {
 #footer_container {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  padding-left: 30px;
+  gap: 71px;
 }
 
-#footer_container div {
+#contact_info,
+#so_me {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-#footer_container div h3 {
+#contact_info h3,
+#so_me h3 {
   font-size: 18px;
   font-weight: bolder;
 }
 
-#footer_container div p,
-#footer_container div a {
+#contact_info p,
+#contact_info a {
   font-size: 14px;
   text-decoration: none;
 }
 
+#contact_info i{
+  margin-right: 5px;
+}
+
+#so_me div {
+  display: flex;
+  gap: 20px;
+}
+
+#so_me div a {
+  font-size: 36px;
+}
 
 /* ------------ Mobile ------------ */
 #logo_footer {
