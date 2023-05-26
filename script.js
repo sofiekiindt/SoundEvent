@@ -18,3 +18,19 @@ function mobileMenu() {
     body.style.overflow = "hidden";
   }
 }
+
+// Opfanger hvis der bliver scrolled på siden.
+window.addEventListener("scroll", () => {
+
+  // Gemmer hvor lang man har scrollet ned som variablen "scroll", divideret med 1000 så det er et decimal tal
+  let scroll = this.scrollY / 1000;
+
+  // Dividere "scroll" med et decimal tal, så "scroll" bliver størrer og gemmer det som variablen "opacity"
+  let opacity = scroll / 0.4;
+
+  // Finder #background_darkener i HTML filen og gemmer den som en variable
+  let background_darkener = document.querySelector("#background_darkener");
+
+  // Opdatere alpha værdien for #background_darkener's baggrundsfarve til værdien gemt i "opacity". Det gør at baggrunds videoen bliver mere eller mindre synlig.
+  background_darkener.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+})
