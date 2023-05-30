@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vi tilbyder - SoundEvent</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <!-- Font Awesome script -->
+  <script src="https://kit.fontawesome.com/2ca87244a7.js" crossorigin="anonymous"></script>
+  <!-- JaveScript script -->
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- Header - Indhold i toppen af hjemmesiden -->
+  <header>
+
+    <!-- Header i desktop udgaven af hjemmesiden -->
+    <div id="desktop_header">
+      <a href="index.html">
+        <img src="assets/logo.png" class="logo" alt="SoundEvents logo">
+      </a>
+      <nav>
+        <a href="vi-tilbyder.html" class="active">VI TILBYDER</a>
+        <a href="om-os.html">OM OS</a>
+        <a href="priser.html">PRISER</a>
+        <a href="kontakt.html">KONTAKT</a>
+      </nav>
+    </div>
+
+    <!-- Header i mobil udgaven af hjemmesiden. Indeholder en "åben knap" til mobil overlay -->
+    <div id="mobile_header">
+      <i id="open_button" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
+    </div>
+
+    <!-- Mobil overlay, som vises når man tykker på "åben knappen" -->
+    <div id="mobile_overlay">
+      <i id="close_button" class="fa-solid fa-xmark" onclick="mobileMenu()"></i>
+      <ul>
+        <li>
+          <a href="index.html">FORSIDE</a>
+        </li>
+        <li>
+          <a href="vi-tilbyder.html">VI TILBYDER</a>
+        </li>
+        <li>
+          <a href="om-os.html">OM OS</a>
+        </li>
+        <li>
+          <a href="priser.html">PRISER</a>
+        </li>
+        <li>
+          <a href="kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main id="offers">
+    <!-- Bruges til at gøre baggrunds videoen mørker når man scroller -->
+    <div id="background_darkener"></div>
+
+    <!-- Indhold på "Vi tilbyder" siden -->
+    <article>
+      <section>
+        <h1>HVAD KAN VI TILBYDE?</h1>
+        <p>Med flere samarbejdspartnere, herunder Flæskes Partybus og Unibrew, der kan vi hos SoundEvent tilbyde alt fra
+          planlægning og koordinering af dit næste event. Hos SoundEvent kan vi arrangere alt fra hoppeborg, bar og
+          partybus og
+          blandt andet hjælpe med lokation, bartendere og dørvagter. Har du brug for hjælp til at arrangere dit næste
+          event?
+          Kontakt os i dag og hør mere om dine muligheder.</p>
+        <span>Kun fantastien sætter grænser.</span>
+      </section>
+      <section>
+        <h2>TIDLIGERE JOBS</h2>
+        <ul>
+          <li>FUJIFILM</li>
+          <li>JYDERUPS ERHVERVSFORERING</li>
+          <li>I. ANKER ANDERSEN</li>
+          <li>HOLBÆK KOMMUNE</li>
+          <li>MENY SKIBBY</li>
+          <li>VAULT OF SPIRITS</li>
+          <li>TOUR DE FRANCE PÅ SANDGAARDEN</li>
+          <li>SKVULP FESTIVAL</li>
+        </ul>
+      </section>
+    </article>
+
+
+  </main>
+
+  <!-- Footer - Indhold i bunden af hjemmesiden  -->
+  <footer>
+
+    <!-- Indholdet i #footer_container er det generelle tekst i footer'en -->
+    <div id="footer_container">
+      <div id="contact_info">
+        <h3>Kontakt os</h3>
+        <p>SoundEvent</p>
+        <p><i class="fa-solid fa-location-dot"></i> Tuse Byvej 7, 4300 Holbæk</p>
+        <p>
+          <i class="fa-solid fa-phone"></i> + 45 31 12 75 48
+        </p>
+        <a href="mailto:soundeventx@gmail.com">
+          <i class="fa-regular fa-envelope"></i> soundeventx@gmail.com
+        </a>
+      </div>
+
+      <div id="so_me">
+        <h3>Sociale Medier</h3>
+        <div>
+          <a href="https://www.instagram.com/soundeventdk/" target="_blank">
+            <img src="assets/instagram.png" alt="Instagrams logo">
+          </a>
+          <a href="https://www.facebook.com/SoundEventDK " target="_blank">
+            <img src="assets/facebook.png" alt="Facebooks logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

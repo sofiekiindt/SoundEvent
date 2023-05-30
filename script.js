@@ -28,6 +28,11 @@ window.addEventListener("scroll", () => {
   // Dividere "scroll" med et decimal tal, så "scroll" bliver størrer og gemmer det som variablen "opacity"
   let opacity = scroll / 0.4;
 
+  // Checker om "opacity" er over 0.7 og hvis den er bliver den sat til 0.7. Det gør at siden ikke bliver for mørk på lange sider.
+  if (opacity > 0.7) {
+    opacity = 0.7;
+  }
+
   // Finder #background_darkener i HTML filen og gemmer den som en variable
   let background_darkener = document.querySelector("#background_darkener");
 
