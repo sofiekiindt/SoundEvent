@@ -26,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px 0 26px;
+  padding: 10px 60px 0 26px;
   height: 97px;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 #desktop_header .logo {
-  width: 237px;
+  width: 190px;
 }
 
 .active {
@@ -134,7 +134,7 @@ h1 {
 
 /* ------------ Frontpage ------------ */
 #logo_main {
-  margin-top: 290px;
+  margin-top: 250px;
   max-width: 510px;
   width: 90vw;
   height: auto;
