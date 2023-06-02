@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("assets/Background_final.png");
+  background-image: url("assets/Background_final.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -132,6 +132,11 @@ h1 {
   font-weight: bold;
 }
 
+article {
+  max-width: 80vw;
+  display: flex;
+}
+
 /* ------------ Frontpage ------------ */
 #logo_main {
   margin-top: 250px;
@@ -142,11 +147,6 @@ h1 {
 
 #mobile_nav_frontpage {
   display: none;
-}
-
-article {
-  max-width: 70vw;
-  display: flex;
 }
 
 /* ------------ Vi tilbyder ------------ */
@@ -161,13 +161,36 @@ article {
 }
 
 #offers article section h1,
-#offers article section h2,
-#offers article section p {
+#offers article section h2 {
   margin-bottom: 30px;
 }
 
+#slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.slider_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 297px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider_box p {
+  padding: 0 10px;
+}
+
 #offers article section span {
+  display: inline-block;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 #offers article section:last-of-type {
@@ -274,6 +297,17 @@ article {
   text-decoration: none;
 }
 
+#contact span,
+#contact a {
+  display: flex;
+}
+
+#contact img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(182deg) brightness(101%) contrast(104%);
+  width: 20px;
+  margin-right: 5px;
+}
+
 /* ----------------------- Footer ----------------------- */
 footer {
   display: flex;
@@ -281,10 +315,13 @@ footer {
   padding-bottom: 10px;
 }
 
+footer img[src$='.svg'] {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(182deg) brightness(101%) contrast(104%);
+}
+
 #footer_container {
   width: 100%;
   display: flex;
-  /* justify-content: space-evenly; */
   padding-left: 30px;
   gap: 71px;
 }
@@ -309,9 +346,17 @@ footer {
   text-decoration: none;
 }
 
-#contact_info i {
+#contact_info span,
+#contact_info a {
+  display: flex;
+}
+
+#contact_info img {
+  width: 14px;
   margin-right: 5px;
 }
+
+
 
 #so_me div {
   display: flex;
@@ -376,6 +421,12 @@ footer {
     text-align: center;
   }
 
+  /* ------------ Vi tilbyder ------------ */
+  .slider_box {
+    width: 230px;
+    height: 130px;
+  }
+
   /* ------------ Priser ------------ */
   #prices article {
     flex-direction: column;
@@ -394,7 +445,6 @@ footer {
   /* ----------------------- Footer ----------------------- */
   footer {
     flex-direction: column;
-    /* align-items: center; */
   }
 
   #footer_container {

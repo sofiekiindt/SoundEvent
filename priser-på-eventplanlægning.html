@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priser på eventplanlægning - SoundEvent</title>
+  <meta name="description"
+    content="SoundEvents kerneopgave er at underholde jer. Med god musik, lyd og lys som kan sørge for i får den bedste fest!">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/soundevent/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/soundevent/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/soundevent/assets/favicon-16x16.png">
+  <link rel="manifest" href="/soundevent/assets/site.webmanifest">
+  <link rel="mask-icon" href="/soundevent/assets/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <!-- Scripts -->
+  <!-- JaveScript script -->
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- Header - Indhold i toppen af hjemmesiden -->
+  <header>
+
+    <!-- Header i desktop udgaven af hjemmesiden -->
+    <div id="desktop_header">
+      <a href="/soundevent/">
+        <img src="assets/SE_Logo_Hvid.webp" class="logo" alt="SoundEvents logo, som består af deres navn samt en lydbølge over navnet">
+      </a>
+      <nav>
+        <a href="/soundevent/vi-tilbyder">VI TILBYDER</a>
+        <a href="/soundevent/om-os">OM OS</a>
+        <a href="/soundevent/priser-på-eventplanlægning" class="active">PRISER</a>
+        <a href="/soundevent/kontakt">KONTAKT</a>
+      </nav>
+    </div>
+
+    <!-- Header i mobil udgaven af hjemmesiden. Indeholder en "åben knap" til mobil overlay -->
+    <div id="mobile_header">
+      <i id="open_button" class="fa-solid fa-bars" onclick="mobileMenu()"></i>
+    </div>
+
+    <!-- Mobil overlay, som vises når man tykker på "åben knappen" -->
+    <div id="mobile_overlay">
+      <i id="close_button" class="fa-solid fa-xmark" onclick="mobileMenu()"></i>
+      <ul>
+        <li>
+          <a href="/soundevent/">FORSIDE</a>
+        </li>
+        <li>
+          <a href="/soundevent/vi-tilbyder">VI TILBYDER</a>
+        </li>
+        <li>
+          <a href="/soundevent/om-os">OM OS</a>
+        </li>
+        <li>
+          <a href="/soundevent/priser-på-eventplanlægning">PRISER</a>
+        </li>
+        <li>
+          <a href="/soundevent/kontakt">KONTAKT</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="prices">
+    <!-- Bruges til at gøre baggrunds videoen mørker når man scroller -->
+    <div id="background_darkener"></div>
+
+    <!-- Indhold på priser siden -->
+    <!-- Titel over "x timer" boksene -->
+    <h1>KUNDERNES FAVORITTER</h1>
+
+    <article>
+
+      <!-- 3 timer boksen -->
+      <section>
+        <h2>3 TIMER</h2>
+        <p>
+          Pakken inkluderer som standart opsætning og nedtagning af udstyr samt lys, lyd og DJ i 3 timer.
+        </p>
+        <span>*4.500 DKK</span>
+        <a href="mailto:email@example.com">SEND FORESPØRGSEL</a>
+      </section>
+
+      <!-- 5 timer boksen -->
+      <section>
+        <h2>5 TIMER</h2>
+        <p>
+          Pakken inkluderer som standart opsætning og nedtagning af udstyr samt lys, lyd og DJ i 5 timer.
+        </p>
+        <span>*6.200 DKK</span>
+        <a href="mailto:email@example.com">SEND FORESPØRGSEL</a>
+      </section>
+
+      <!-- 7 timer boksen -->
+      <section>
+        <h2>7 TIMER</h2>
+        <p>
+          Pakken inkluderer som standart opsætning og nedtagning af udstyr samt lys, lyd og DJ i 7 timer.
+        </p>
+        <span>*8.400 DKK</span>
+        <a href="mailto:email@example.com">SEND FORESPØRGSEL</a>
+      </section>
+    </article>
+    <p id="price_info">Ønsker du andet end ovenstående? Så tøv ikke med at kontakte os!</p>
+    <span>*Alle priser er inkl. moms og kørsel og er beregnet ud fra ca. 100 deltagende.</span>
+  </main>
+
+  <!-- Footer - Indhold i bunden af hjemmesiden  -->
+  <footer>
+
+    <!-- Indholdet i #footer_container er det generelle tekst i footer'en -->
+    <div id="footer_container">
+      <div id="contact_info">
+        <h3>Kontakt os</h3>
+        <p>SoundEvent</p>
+        <span><img src="assets/location-dot-solid.svg" alt="Et ikon af en lokation indikator"> <p>Tuse Byvej 7, 4300 Holbæk</p></span>
+        <span> <img src="assets/phone-solid.svg" alt="Et ikon af en telefon"><p> + 45 31 12 75 48
+        </p></span>
+        <a href="mailto:soundeventx@gmail.com">
+          <img src="assets/envelope-solid.svg" alt="Et ikon af et brev"> soundeventx@gmail.com
+        </a>
+      </div>
+
+      <div id="so_me">
+        <h3>Sociale Medier</h3>
+        <div>
+          <a href="https://www.instagram.com/soundeventdk/" target="_blank">
+            <img src="assets/instagram v2.png" alt="Instagrams logo">
+          </a>
+          <a href="https://www.facebook.com/SoundEventDK " target="_blank">
+            <img src="assets/facebook.svg" alt="Facebooks logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
