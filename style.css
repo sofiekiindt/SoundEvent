@@ -179,7 +179,8 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 297px;
+  min-width: 140px;
+  width: 20%;
   height: 150px;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -214,7 +215,7 @@ article {
   width: 650px;
 }
 
-#about_us span p{
+#about_us span p {
   font-size: 19px;
   font-weight: bold;
 }
@@ -340,8 +341,8 @@ footer {
   text-transform: uppercase;
 }
 
-#contact_info p,
-#contact_info a {
+footer p,
+footer a {
   font-size: 14px;
   text-decoration: none;
 }
@@ -355,8 +356,6 @@ footer {
   width: 14px;
   margin-right: 5px;
 }
-
-
 
 #so_me div {
   display: flex;
