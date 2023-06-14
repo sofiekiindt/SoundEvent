@@ -206,30 +206,31 @@ article {
   gap: 20px;
 }
 
-#slider {
+#review_slider {
+  margin-top: 20px;
   width: 100%;
-  margin: 0 auto 20px;
-  text-align: center;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  position: relative;
   overflow: hidden;
 }
 
-#slider_photos {
-  position: relative;
-  height: 450px;
+.slides {
   width: 100%;
-}
-
-#slider_photos img {
-  width: 100%;
+  max-width: 800px;
+  height: 350px;
   position: absolute;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s;
+  transition: all 0.5s;
 }
 
-#slider_photos img.shown {
-  opacity: 1;
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+
 
 /* ------------ Om os ------------ */
 #about_us {
@@ -243,6 +244,17 @@ article {
 #about_us span p {
   font-size: 19px;
   font-weight: bold;
+}
+
+#about_us div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#about_us div img {
+  width: 47%;
+  height: auto;
 }
 
 /* ------------ Priser ------------ */
@@ -449,6 +461,18 @@ footer a {
   .slider_box {
     width: 230px;
     height: 130px;
+  }
+
+  /* ------------ Om os ------------ */
+  #about_us div {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #about_us div img {
+    width: 100%;
+    max-width: 430px;
   }
 
   /* ------------ Priser ------------ */
