@@ -42,3 +42,25 @@ window.addEventListener("scroll", () => {
   Det gør at baggrunds videoen bliver mere eller mindre synlig. */
   background_darkener.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
 })
+
+
+// Slider
+const slides = document.querySelectorAll(".slides");
+
+window.setInterval(slider, 5000)
+
+function slider() {
+  console.log("test");
+  let currentSlide = 0;
+  let maxSlide = slides.length - 1;
+
+  if (currentSlide === maxSlide) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+  }
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(${100 * (i - currentSlide)}%)`;
+  });
+
+}

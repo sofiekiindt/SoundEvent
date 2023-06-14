@@ -206,6 +206,31 @@ article {
   gap: 20px;
 }
 
+#slider {
+  width: 100%;
+  margin: 0 auto 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#slider_photos {
+  position: relative;
+  height: 450px;
+  width: 100%;
+}
+
+#slider_photos img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#slider_photos img.shown {
+  opacity: 1;
+}
+
 /* ------------ Om os ------------ */
 #about_us {
   flex-direction: column;
