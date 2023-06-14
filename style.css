@@ -212,6 +212,7 @@ article {
   height: 350px;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
 }
@@ -219,9 +220,10 @@ article {
 .slides {
   width: 100%;
   max-width: 800px;
-  height: 350px;
+  height: auto;
   position: absolute;
   transition: all 0.5s;
+  z-index: -1;
 }
 
 .slides img {
