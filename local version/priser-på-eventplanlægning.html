@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priser på eventplanlægning - SoundEvent</title>
+  <meta name="description"
+    content="SoundEvents kerneopgave er at underholde jer. Med god musik, lyd og lys som kan sørge for i får den bedste fest!">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../soundevent/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../soundevent/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../soundevent/assets/favicon-16x16.png">
+  <link rel="manifest" href="../soundevent/assets/site.webmanifest">
+  <link rel="mask-icon" href="../soundevent/assets/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="../soundevent/assets/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="../soundevent/assets/mstile-144x144.png">
+  <meta name="msapplication-config" content="../soundevent/assets/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+    as="style">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
+
+
+  <!-- Scripts -->
+  <!-- JaveScript script -->
+  <script type="text/javascript" src="../script.js"></script>
+</head>
+
+<body>
+
+  <!-- Header - Indhold i toppen af hjemmesiden -->
+  <header>
+
+    <!-- Header i desktop udgaven af hjemmesiden -->
+    <div id="desktop_header">
+      <a href="index.html">
+        <img src="../assets/SE_Logo_Hvid.webp" class="logo"
+          alt="SoundEvents logo, som består af deres navn samt en lydbølge over navnet">
+      </a>
+      <nav>
+        <a href="vi-tilbyder.html">VI TILBYDER</a>
+        <a href="om-os.html">OM OS</a>
+        <a href="priser-på-eventplanlægning.html" class="active">PRISER</a>
+        <a href="kontakt.html">KONTAKT</a>
+      </nav>
+    </div>
+
+    <!-- Header i mobil udgaven af hjemmesiden. Indeholder en "åben knap" til mobil overlay -->
+    <div id="mobile_header">
+      <img src="../assets/bars-solid.svg" id="open_button" onclick="mobileMenu()" alt="Et ikon som består af 3 vandrette strejer under hinanden">
+    </div>
+
+    <!-- Mobil overlay, som vises når man tykker på "åben knappen" -->
+    <div id="mobile_overlay">
+      <img src="../assets/xmark-solid.svg" id="close_button" onclick="mobileMenu()" alt="Et ikon som består af et kryds">
+      <ul>
+        <li>
+          <a href="index.html">FORSIDE</a>
+        </li>
+        <li>
+          <a href="vi-tilbyder.html">VI TILBYDER</a>
+        </li>
+        <li>
+          <a href="om-os.html">OM OS</a>
+        </li>
+        <li>
+          <a href="priser-på-eventplanlægning.html">PRISER</a>
+        </li>
+        <li>
+          <a href="kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="prices">
+    <!-- Bruges til at gøre baggrunds videoen mørker når man scroller -->
+    <div id="background_darkener"></div>
+
+    <!-- Indhold på priser siden -->
+    <!-- Titel over "x timer" boksene -->
+    <h1>KUNDERNES FAVORITTER</h1>
+
+    <article>
+
+      <!-- 3 timer boksen -->
+      <section>
+        <h2>3 TIMER</h2>
+        <p>
+          Pakken inkluderer som standart opsætning og nedtagning af udstyr samt lys, lyd og DJ i 3 timer.
+        </p>
+        <span>*4.500 DKK</span>
+        <a href="mailto:soundeventx@gmail.com">SEND FORESPØRGSEL</a>
+      </section>
+
+      <!-- 5 timer boksen -->
+      <section>
+        <h2>5 TIMER</h2>
+        <p>
+          Pakken inkluderer som standart opsætning og nedtagning af udstyr samt lys, lyd og DJ i 5 timer.
+        </p>
+        <span>*6.200 DKK</span>
+        <a href="mailto:soundeventx@gmail.com">SEND FORESPØRGSEL</a>
+      </section>
+
+      <!-- 7 timer boksen -->
+      <section>
+        <h2>7 TIMER</h2>
+        <p>
+          Pakken inkluderer som standart opsætning og nedtagning af udstyr samt lys, lyd og DJ i 7 timer.
+        </p>
+        <span>*8.400 DKK</span>
+        <a href="mailto:soundeventx@gmail.com">SEND FORESPØRGSEL</a>
+      </section>
+    </article>
+    <p id="price_info">Ønsker du andet end ovenstående? Så tøv ikke med at kontakte os!</p>
+    <span>*Alle priser er inkl. moms og kørsel og er beregnet ud fra ca. 100 deltagende.</span>
+  </main>
+
+  <!-- Footer - Indhold i bunden af hjemmesiden  -->
+  <footer>
+
+    <!-- Indholdet i #footer_container er det generelle tekst i footer'en -->
+    <div id="footer_container">
+      <div id="contact_info">
+        <p class="footer_title">Kontakt os</p>
+        <p>SoundEvent</p>
+        <span><img src="../assets/location-dot-solid.svg" alt="Et ikon af en lokation indikator">
+          <p>Tuse Byvej 7, 4300 Holbæk</p>
+        </span>
+        <span> <img src="../assets/phone-solid.svg" alt="Et ikon af en telefon">
+          <p> + 45 31 12 75 48
+          </p>
+        </span>
+        <a href="mailto:soundeventx@gmail.com">
+          <img src="../assets/envelope-solid.svg" alt="Et ikon af et brev"> soundeventx@gmail.com
+        </a>
+      </div>
+
+      <div id="so_me">
+        <p class="footer_title">Sociale Medier</p>
+        <div>
+          <a href="https://www.instagram.com/soundeventdk/" target="_blank">
+            <img src="../assets/instagram v2.webp" alt="Instagrams logo">
+          </a>
+          <a href="https://www.facebook.com/SoundEventDK " target="_blank">
+            <img src="../assets/facebook.svg" alt="Facebooks logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
